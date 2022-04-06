@@ -403,7 +403,7 @@ a:hover{
   color: black;
   display: inline-block;
   font-size: 15px;
-  
+  cursor: pointer;
 }
 .list-text a:hover{
   opacity: 0.5;
