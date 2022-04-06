@@ -1,1 +1,80 @@
-
+@media(max-width:390px){
+    *{
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    body{
+        min-width: 375px;
+        clear: left;
+        flex: 1;
+    }
+    html{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        
+    }
+    .header-top{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+    .header-top img{
+       height: 80px;
+       width: 200px;
+    }
+    .anime{
+        width: 100%;
+    }
+    .nav{
+        float: inline-start;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav a{
+        flex: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .main-page{
+        margin: 0;
+        margin-bottom: 30px;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .containers{
+        background-position: center;
+        height: 400px;
+    }
+    .containers h1{
+        font-size: 50px;
+    }
+    .containers p{
+        font-size: 30px;
+    }
+    .lists{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .list{
+        flex: auto;
+        width: 100%;
+       margin-bottom: 80px;
+    }
+}
