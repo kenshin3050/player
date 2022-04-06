@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+header{
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Kaisei HarunoUmi', serif;
+   height: 250px;
+   flex-direction: column;
+}
+.anime{
+    padding-top: 5px;
+    padding-left: 20px;
+    font-family: 'Reggae One', cursive;
+}
+.header-top{
+    padding-top: 20px;
+    display: flex;
+   
+}
+.header-top img{
+    height: 80px;
+    width: 180px;
+    cursor: pointer;
+}
+.nav {
+    float: right;
+    padding-top: 40px;
+    font-weight: bold;
+    color: rgb(165, 24, 24);
+}
+.nav a{
+font-size: 20px;
+padding: 5px 15px;
+position: relative;
+opacity: 0.8;
+cursor: pointer;
+    border: 1px solid rgb(165, 24, 24);
+}
+a:hover{
+    opacity: 1;
+     background-color: rgb(165, 24, 24);
+    color: black;
+}
+* {
+    box-sizing: border-box;
+  }
+  :root {
+    --white:#f1f1f1
+  }
+  body {
+    margin: 0;
+    font-size: 36px;
+    color: rgb(201, 20, 20);
+    background-color: black;
+  }
+  div > span {
+    opacity: 0.8;
+  }
+  #I {
+    opacity: 1;
+    animation: flickerI 2s linear  reverse infinite;
+  }
+  #I::after {
+    content: '';
+    width: 150%;
+    -webkit-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+    -moz-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+    box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+  }
+  #L, #G {
+    animation: flickerLG 2s linear reverse infinite;
+    position: relative;
+  }
+  #L::after, 
+  #L::before  {
+    content:' ';
+    width: 100px;
+    height: 100px;
+    background: var(--white);
+    position: absolute;
+    top: -50%;
+    left: 100%;
+    border-radius: 100%;
+    opacity: 0.05;
+    filter: blur(10px);
+  }
+  #L::after {
+    width: 200px;
+    height: 200px;
+    top: -150%;
+    left: -5%;
+    opacity: 0.1;
+    filter: blur(10px);
+  }
+  #H {
+    animation: flickerH 2s linear reverse infinite
+  }
+  
+  #T {
+    animation: flickerH 2s linear reverse infinite
+  }
+  
+  @keyframes flickerI {
+    0% {
+      opacity: 0.6;
+    }
+    5% {
+      opacity: 0.7;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    15% {
+      opacity: 0.85;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0.6;
+    }
+    40% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.7;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.85;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flickerLG {
+    0% {
+      opacity: 0.4;
+    }
+    5% {
+      opacity: 0.2;
+    }
+    10% {
+      opacity: 0.25;
+    }
+    15% {
+      opacity: 0.35;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.4;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    40% {
+      opacity: 0.25;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    60% {
+      opacity: 0.4;
+    }
+    70% {
+      opacity: 0.35;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+  
+  @keyframes flickerH {
+    0% {
+      opacity: 0.15;
+    }
+    5% {
+      opacity: 0.2;
+    }
+    10% {
+      opacity: 0.12;
+    }
+    15% {
+      opacity: 0.2;
+    }
+    25% {
+      opacity: 0.15;
+    }
+    30% {
+      opacity: 0.4;
+    }
+    35% {
+      opacity: 0.05;
+    }
+    40% {
+      opacity: 0.12;
+    }
+    45% {
+      opacity: 0.15;
+    }
+    60% {
+      opacity: 0.3;
+    }
+    70% {
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    90% {
+      opacity: 0.18;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
+  @keyframes flickerT {
+    0% {
+      opacity: 0.3;
+    }
+    5% {
+      opacity: 0.3;
+    }
+    10% {
+      opacity: 0.4;
+    }
+    15% {
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0.4;
+    }
+    30% {
+      opacity: 0.2;
+    }
+    35% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    70% {
+      opacity: 0.1;
+    }
+    80% {
+      opacity: 0.2;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+  :root {
+    --white: #fff;
+    --red: #e74c3c;
+    --black: #000;
+    --img-color: #ededed;
+    --overlay: rgba(0, 0, 0, 0.75);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: var(--img-color);
+  }
+  
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    bottom: 0;
+    left: -9999px;
+  }
+  
+  body {
+    color: var(--white);
+    margin: 20px 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    max-width: 450px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  footer{
+    padding-top: 20px;
+    font-size: 12px;
+   text-align: center;
+}
+.containers{
+    height: 650px;
+      height: 600px;
+      background-size: cover;
+      margin-bottom: 40px;
+      display: table;
+    min-width: 100%;
+    width: 100%;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.137);
+    opacity: 0.6;
+}
+.container-text{
+    text-align: center;
+    font-family: 'Reggae One', cursive;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+     text-shadow: 10px 10px 0 rgb(192, 21, 21);
+}
+.container-text h1{
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.container-text p{
+  font-size: 50px;
+}
+.main-top{
+  text-align: center;
+  font-family: 'Reggae One', cursive;
+  color: rgb(192, 21, 21);
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.lists{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.list{
+  width: 15%;
+  height: 400px;
+  background-size: cover;
+  margin-right: 60px;
+  position: relative;
+}
+.list-text{
+ position: absolute;
+ bottom: 0;
+ background-color: rgb(165, 4, 4);
+ width: 85%;
+ padding-top: 20px;
+ padding-left: 20px;
+}
+.list-text p{
+  font-family: 'Reggae One', cursive;
+  font-size: 15px;
+  color: black;
+}
+.list-text a{
+  font-family: 'Reggae One', cursive;
+  font-size: 20px;
+  color: black;
+  display: inline-block;
+  font-size: 15px;
+  
+}
+.list-text a:hover{
+  opacity: 0.5;
+}
+.captain{
+  font-family: 'Reggae One', cursive;
+  font-size: 20px;
+  color: rgb(165, 4, 4);
+  background-color: rgb(49, 37, 37);
+  width: 41%;
+}
+
