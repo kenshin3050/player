@@ -76,7 +76,6 @@
         flex: auto;
         width: 100%;
        margin-bottom: 80px;
-       justify-content: center;
-       align-items: center;
+       margin: 0 auto;
     }
 }
