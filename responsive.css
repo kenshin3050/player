@@ -82,3 +82,17 @@
         text-align: center;
     }
 }
+@media(max-width:1200px){
+   
+    .lists{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .list{
+        flex: auto;
+        width: 40%;
+       margin: 0 auto;
+       margin-bottom: 50px;
+    }
+   ｝
