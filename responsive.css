@@ -85,5 +85,6 @@
 @media(max-width:390px)(min-width:600px){
    .list{
    width:25%;
+      margin-right:0;
    }
 }
