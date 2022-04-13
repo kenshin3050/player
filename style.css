@@ -381,7 +381,7 @@ a:hover{
   width: 20%;
   height: 400px;
   background-size: cover;
-  margin-right: 60px;
+  margin:0 40px;
   position: relative;
 }
 .list-text{
